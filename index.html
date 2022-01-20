@@ -17,7 +17,7 @@
         if(camera){
             navigator.mediaDevices.getUserMedia({
                 video:true,
-                audio:false
+                audio:true
             })
             .then(function(streamLive){
                 video.srcObject = streamLive;
